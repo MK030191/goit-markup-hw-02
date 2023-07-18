@@ -83,25 +83,26 @@ ul {
 }
 
 
-.contacts a {
+.contacts {
+    font-style: normal;
     color: var(--primary-text-color);
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    font-style: normal;
 }
 
-.mail_tel:hover,
-.mail_tel:focus {
+.mail-tel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.mail-tel:hover,
+.mail-tel:focus {
     color: var(--accent-color);
 }
 
-.mail_tel {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
 
 .hero {
     background-color: var(--title-text-color);
@@ -113,42 +114,6 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-white-color);
-    background-color: var(--title-text-color);
-}
-
-.section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 0.02em;
-}
-
-.bg-color {
-    background-color: var(--light-mode-backgrounds-color);
-}
-
-.advantage-list .title,
-.team .names,
-.team .text,
-.examples-list .title {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.team .names,
-.team .text {
-    text-align: center;
-    background-color: var(--primary-white-color);
-}
-
-.examples-list {
-    list-style: none;
 }
 
 /* Button hero*/
@@ -168,7 +133,34 @@ ul {
     background-color: var(--accent-color);
 }
 
-.button .secondary {
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+.bg-color {
+    background-color: var(--light-mode-backgrounds-color);
+}
+
+.title,
+.team .names {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.bg-color-names {
+    background-color: var(--primary-white-color);
+}
+
+.button-secondary {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -179,8 +171,8 @@ ul {
     background-color: var(--light-mode-backgrounds-color);
 }
 
-.secondary:hover,
-.secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
