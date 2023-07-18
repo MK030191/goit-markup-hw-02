@@ -33,29 +33,29 @@ ul {
 
 /* Logo */
 .logo {
-    color: var(--primary-text-color);
+    color: var(--secondary-accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.logo .logo-color-first {
-    color: var(--secondary-accent-color);
+.link {
+    text-decoration: none;
 }
 
-.logo .logo-color-second-header {
+.logo-p2 {
     color: var(--title-text-color);
 }
 
-.logo .logo-color-second-footer {
+.logo-p2-footer {
     color: var(--light-mode-backgrounds-color);
 }
 
-.site-nav .link {
+.site-nav {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -64,18 +64,31 @@ ul {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus
+.site-nav .link-current:hover,
+.site-nav .link-current:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
-    color: var(--accent-color);    
+.site-nav .link-current {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.list {
+    list-style: none;
 }
 
 .contacts a {
-    color: var(--title-text-color);
-    font-size: 20px;
-    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-style: normal;
 }
 
 .contacts a:hover,
@@ -89,11 +102,10 @@ ul {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-}
-
-.hero-bg-color {
+    letter-spacing: 0.02em;
     background-color: var(--title-text-color);
 }
+
 
 .section-title {
     color: var(--title-text-color);
@@ -102,27 +114,38 @@ ul {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+.bg-color {
+    background-color: var(--light-mode-backgrounds-color);
 }
 
 .advantage-list .title,
 .team .names,
+.team .text
 .examples-list .title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .team .names,
 .team .text {
     text-align: center;
+    background-color: var(--primary-white-color);
+}
+
+.examples-list {
+    list-style: none;
 }
 
 /* Button hero*/
 .button {
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
-    font-family: inherit;
+    color: var(--primary-white-color);
+    background-color: var(--secondary-accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -130,22 +153,18 @@ ul {
     cursor: pointer;
 }
 
-.button.primary {
-    color: var(--primary-white-color);
-    background-color: var(--secondary-accent-color);
-}
-
-.button.primary:hover {
-    color: var(--primary-white-color);
+.primary:hover,
+.primary:focus {
     background-color: var(--accent-color);
 }
 
-.button.secondary {
+.button .secondary {
     color: var(--secondary-accent-color);
     background-color: var(--light-mode-backgrounds-color);
 }
 
-.button.secondary:hover {
+.secondary:hover,
+.secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
@@ -155,5 +174,7 @@ ul {
 }
 
 .promotional-message {
-    color: var(--third-accent-color);
+    color: var(--light-mode-backgrounds-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
