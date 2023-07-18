@@ -47,11 +47,15 @@ ul {
     text-decoration: none;
 }
 
-.logo-p2 {
+.list {
+    list-style: none;
+}
+
+.logo-header {
     color: var(--title-text-color);
 }
 
-.logo-p2-footer {
+.logo-footer {
     color: var(--light-mode-backgrounds-color);
 }
 
@@ -76,12 +80,8 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
 }
 
-.list {
-    list-style: none;
-}
 
 .contacts a {
     color: var(--primary-text-color);
@@ -91,21 +91,29 @@ ul {
     font-style: normal;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.mail_tel:hover,
+.mail_tel:focus {
     color: var(--accent-color);
 }
 
+.mail_tel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.hero {
+    background-color: var(--title-text-color);
+}
+
 .hero-title {
-    color: #FFFFFF;
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    background-color: var(--title-text-color);
+    color: var(--primary-white-color);
 }
-
 
 .section-title {
     color: var(--title-text-color);
@@ -123,7 +131,7 @@ ul {
 
 .advantage-list .title,
 .team .names,
-.team .text
+.team .text,
 .examples-list .title {
     color: var(--title-text-color);
     font-weight: 500;
@@ -144,21 +152,28 @@ ul {
 
 /* Button hero*/
 .button {
-    color: var(--primary-white-color);
     background-color: var(--secondary-accent-color);
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    color: var(--primary-white-color);
 }
 
-.primary:hover,
-.primary:focus {
+.button:hover,
+.button:focus {
     background-color: var(--accent-color);
 }
 
 .button .secondary {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     color: var(--secondary-accent-color);
     background-color: var(--light-mode-backgrounds-color);
 }
@@ -167,6 +182,12 @@ ul {
 .secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 
 .footer {
