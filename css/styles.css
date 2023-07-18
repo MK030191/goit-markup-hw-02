@@ -31,10 +31,6 @@ ul {
     list-style: none;
 }
 
-address {
-    font-style: normal;
-}
-
 /* Logo */
 .logo {
     color: var(--secondary-accent-color);
@@ -86,6 +82,9 @@ address {
     letter-spacing: 0.02em;
 }
 
+.directions {
+    font-style: normal;
+}
 
 .mail-tel {
     font-size: 16px;
